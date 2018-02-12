@@ -1,4 +1,17 @@
-body{
-	background-color: lightblue;
-	color: #fff;
+
+.div1, .div2{
+	margin-bottom: 50px;
+}
+.block{
+	border: 1px solid;
+	padding: 20px;
+}
+.div1{
+	border-color: black;
+}
+.div2{
+	border-color: red;
+}
+.div3{
+	border-color: yellow;
 }
