@@ -1,79 +1,117 @@
 <!DOCTYPE html>
 <html>
    <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+      <link rel="stylesheet" type="text/css" href="styles/normalize.css">
+      <link rel="stylesheet" type="text/css" href="styles/style.css">
       <meta charset="utf-8">
       <title>Заголовок страницы</title>
-      <link rel="stylesheet" type="text/css" href="style.css">
    </head>
    <body>
-   
-   	<h1>Oleg</h1>
-   	<h2>Unemployed</h2>
-   	<p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн. Его популяризации в новое время послужили публикация листов Letraset с образцами Lorem Ipsum в 60-х годах и, в более недавнее время, программы электронной вёрстки типа Aldus PageMaker, в шаблонах которых используется Lorem Ipsum.</p>
-   	<p>Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона, а также реальное распределение букв и пробелов в абзацах, которое не получается при простой дубликации "Здесь ваш текст.. Здесь ваш текст.. Здесь ваш текст.." Многие программы электронной вёрстки и редакторы HTML используют Lorem Ipsum в качестве текста по умолчанию, так что поиск по ключевым словам "lorem ipsum" сразу показывает, как много веб-страниц всё ещё дожидаются своего настоящего рождения. За прошедшие годы текст Lorem Ipsum получил много версий. Некоторые версии появились по ошибке, некоторые - намеренно (например, юмористические варианты).</p>
-   	<p>Многие думают, что Lorem Ipsum - взятый с потолка псевдо-латинский набор слов, но это не совсем так. Его корни уходят в один фрагмент классической латыни 45 года н.э., то есть более двух тысячелетий назад. Ричард МакКлинток, профессор латыни из колледжа Hampden-Sydney, штат Вирджиния, взял одно из самых странных слов в Lorem Ipsum, "consectetur", и занялся его поисками в классической латинской литературе. В результате он нашёл неоспоримый первоисточник Lorem Ipsum в разделах 1.10.32 и 1.10.33 книги "de Finibus Bonorum et Malorum" ("О пределах добра и зла"), написанной Цицероном в 45 году н.э. Этот трактат по теории этики был очень популярен в эпоху Возрождения. Первая строка Lorem Ipsum, "Lorem ipsum dolor sit amet..", происходит от одной из строк в разделе 1.10.32 Классический текст Lorem Ipsum, используемый с XVI века, приведён ниже. Также даны разделы 1.10.32 и 1.10.33 "de Finibus Bonorum et Malorum" Цицерона и их английский перевод, сделанный H. Rackham, 1914 год.</p>
-   	<img src="https://scontent.fiev5-1.fna.fbcdn.net/v/t1.0-9/552114_400536140000158_1816116804_n.jpg?oh=1e98a6054934e0d83eaea8bac55974d9&oe=5B1E6E6A" width="600" alt="">
-   	<br>
-    <a href="https://www.facebook.com/oleg.kondratenko.75">My facebook</a>
-    <ul> Вещи которые я бы хотел купить:
-    	<li>Квартира</li>
-    	<li>Биткоин по 100$</li>
-    	<li>Альманах из будущего</li>
-    </ul>
-    <ol>Вещи которые я приобрел:
-    	<li>Кеды</li>
-    	<li>Свитер</li>
-    	<li>Панкреатит</li>
-    </ol>
 
-    <table border="1" cellpadding="10">
-      <tr>
-        <td>The Fellowship of the Ring</td>
-        <td>Peter Jackson</td>
-        <td>2001</td>
-      </tr>
-      <tr>
-        <td>Scott Pilgrim vs. the World</td>
-        <td>Edgar Wright</td>
-        <td>2010</td>
-      </tr>
-      <tr>
-        <td>Пролiтаючи над гнiздом зозулi</td>
-        <td>Milos Forman</td>
-        <td>1975</td>
-      </tr>
-    </table>
+    <header>
+      <div class="container">
+        <div class="col-12 justify-center header-logo-col">
+          <a href="/"><img src="images/logo.svg"></a>
+        </div>
+        <div class="col-12 justify-center">
+          <nav>
+            <a href="#">Рюкзаки</a>
+            <a href="#">Аксессуары</a>
+            <a href="#">Сумки</a>
+            <a href="#">Шапки</a>
+            <a href="#">Перчатки</a>
+          </nav>
+        </div>
+      </div>  
+    </header>
 
-    <label>Логин</label>
-      <input type="text" name="login">
-      <label>Пароль</label>
-      <input type="password" name="password">
-      <label>Ф.И.О.</label>
-      <input type="text" name="name">
-      <label>Никнейм</label>
-      <input type="text" name="nickname">
-      <label>Я соглашаюсь с правилами сайта</label>
-      <input type="checkbox" name="rules">
+    <main>
+      <div class="container">
+        <section class="main-item">
+          <div class="main-item-top">
+          <img src="images/backpack.png" class="main-item-img" alt="">
+          <div class="main-item-description">
+            <h1>Herschel supply</h1>
+            <span>Well equipped for school and work essentials, the Herschel Pop Quiz™ backpack is designed with a versatile range of storage pockets and organizers.</span>
+            <h2>Features</h2>
+            <ol class="main-item-list">
+              <li>Padded and fleece lined 15" laptop sleeve</li>
+              <li>Front pocket with internal organizers and key clip</li>
+              <li>Waterproof zipper detail</li>
+              <li>Classic women label</li>
+            </ol>
+            <button class="main-item-btn">В корзину</button>
+          </div>
+        </div>
+          
+        </section>
+        <h2 class="catalog-heading">Popular items</h2>
+        <section class="catalog">
+          
+          <div class="row">
+            <div class="col-3 col-sm-6 col-xs-12">
+              <div class="catalog-item">
+                <img src="images/cat_img.png" class="catalog-img">
+              </div>
+            </div>
+            <div class="col-3 col-sm-6 col-xs-12">
+              <div class="catalog-item">
+                <img src="images/cat_img.png" class="catalog-img">
+              </div>
+            </div>
+            <div class="col-3 col-sm-6 col-xs-12">
+              <div class="catalog-item">
+                <img src="images/cat_img.png" class="catalog-img">
+              </div>
+            </div>
+            <div class="col-3 col-sm-6 col-xs-12">
+              <div class="catalog-item">
+                <img src="images/cat_img.png" class="catalog-img">
+              </div>
+            </div>
+            <div class="col-3 col-sm-6 col-xs-12">
+              <div class="catalog-item">
+                <img src="images/cat_img.png" class="catalog-img">
+              </div>
+            </div>
+            <div class="col-3 col-sm-6 col-xs-12">
+              <div class="catalog-item">
+                <img src="images/cat_img.png" class="catalog-img">
+              </div>
+            </div>
+            <div class="col-3 col-sm-6 col-xs-12">
+              <div class="catalog-item">
+                <img src="images/cat_img.png" class="catalog-img">
+              </div>
+            </div>
+            <div class="col-3 col-sm-6 col-xs-12">
+              <div class="catalog-item">
+                <img src="images/cat_img.png" class="catalog-img">
+              </div>
+            </div>
+          </div>
 
-      <form action="/cookcarbonara">
-        <input type="text" name="spagetti" placeholder="Спагетти"><br>
-        <input type="text" name="bacon" placeholder="Бекон"><br>
-        <input type="text" name="cream" placeholder="Сливки"><br>
-        <input type="text" name="eggYolks" placeholder="Желтки"><br>
-        <input type="text" name="cheese" placeholder="Сыр"><br>
-        <input type="checkbox" name="salt">
-        <label>Солить?</label><br>
-        <button type="submit">Приготовить</button>
-        
-      </form>
-
-      <div class="block div1"><span>Таким образом рамки и место обучения кадров влечет за собой процесс внедрения и модернизации новых предложений. Задача организации, в особенности же укрепление и развитие структуры играет важную роль в формировании новых предложений. Разнообразный и богатый опыт укрепление и развитие структуры способствует подготовки и реализации направлений прогрессивного развития. Не следует, однако забывать, что рамки и место обучения кадров требуют определения и уточнения позиций, занимаемых участниками в отношении поставленных задач. Не следует, однако забывать, что сложившаяся структура организации в значительной степени обуславливает создание существенных финансовых и административных условий. Повседневная практика показывает, что реализация намеченных плановых заданий представляет собой интересный эксперимент проверки новых предложений.</span><span>Не следует, однако забывать, что реализация намеченных плановых заданий позволяет оценить значение соответствующий условий активизации. С другой стороны дальнейшее развитие различных форм деятельности способствует подготовки и реализации направлений прогрессивного развития. С другой стороны рамки и место обучения кадров позволяет выполнять важные задания по разработке новых предложений. С другой стороны новая модель организационной деятельности способствует подготовки и реализации соответствующий условий активизации. Разнообразный и богатый опыт рамки и место обучения кадров влечет за собой процесс внедрения и модернизации существенных финансовых и административных условий.</span></div>
-      <div class="block div2"><span>Таким образом рамки и место обучения кадров влечет за собой процесс внедрения и модернизации новых предложений. Задача организации, в особенности же укрепление и развитие структуры играет важную роль в формировании новых предложений. Разнообразный и богатый опыт укрепление и развитие структуры способствует подготовки и реализации направлений прогрессивного развития. Не следует, однако забывать, что рамки и место обучения кадров требуют определения и уточнения позиций, занимаемых участниками в отношении поставленных задач. Не следует, однако забывать, что сложившаяся структура организации в значительной степени обуславливает создание существенных финансовых и административных условий. Повседневная практика показывает, что реализация намеченных плановых заданий представляет собой интересный эксперимент проверки новых предложений.</span><span>Не следует, однако забывать, что реализация намеченных плановых заданий позволяет оценить значение соответствующий условий активизации. С другой стороны дальнейшее развитие различных форм деятельности способствует подготовки и реализации направлений прогрессивного развития. С другой стороны рамки и место обучения кадров позволяет выполнять важные задания по разработке новых предложений. С другой стороны новая модель организационной деятельности способствует подготовки и реализации соответствующий условий активизации. Разнообразный и богатый опыт рамки и место обучения кадров влечет за собой процесс внедрения и модернизации существенных финансовых и административных условий.</span></div>
-      <div class="block div3"><span>Таким образом рамки и место обучения кадров влечет за собой процесс внедрения и модернизации новых предложений. Задача организации, в особенности же укрепление и развитие структуры играет важную роль в формировании новых предложений. Разнообразный и богатый опыт укрепление и развитие структуры способствует подготовки и реализации направлений прогрессивного развития. Не следует, однако забывать, что рамки и место обучения кадров требуют определения и уточнения позиций, занимаемых участниками в отношении поставленных задач. Не следует, однако забывать, что сложившаяся структура организации в значительной степени обуславливает создание существенных финансовых и административных условий. Повседневная практика показывает, что реализация намеченных плановых заданий представляет собой интересный эксперимент проверки новых предложений.</span><span>Не следует, однако забывать, что реализация намеченных плановых заданий позволяет оценить значение соответствующий условий активизации. С другой стороны дальнейшее развитие различных форм деятельности способствует подготовки и реализации направлений прогрессивного развития. С другой стороны рамки и место обучения кадров позволяет выполнять важные задания по разработке новых предложений. С другой стороны новая модель организационной деятельности способствует подготовки и реализации соответствующий условий активизации. Разнообразный и богатый опыт рамки и место обучения кадров влечет за собой процесс внедрения и модернизации существенных финансовых и административных условий.</span></div>
-
-    <button class="btn">
-      <img src="https://lh5.ggpht.com/9fiMIajl4gCGr-4KQ-0SRoDZ4XcgxpkUgEsBZgftfotgjXdlPT1FoA9X7cYCsONGnko=w170" class="btn_img">
-    </button>
-   
+        </section>
+        <h2 class="catalog-heading">Herschel supply at social:</h2>
+        <section class="social">
+            <button class="social-vk social-btn col-3 col-sm-6 col-xs-12"><img src="images/vk.png"></button>
+            <button class="social-fb social-btn col-3 col-sm-6 col-xs-12"><img src="images/fb.png"></button>
+            <button class="social-tg social-btn col-3 col-sm-6 col-xs-12"><img src="images/tg.png"></button>
+            <button class="social-md social-btn col-3 col-sm-6 col-xs-12"><img src="images/md.png"></button>
+        </section>
+      </div>
+    </main>
+    <footer>
+      <div class="footer-links">
+        <a href="#">Terms and conditions</a>
+        <a href="#">Contacts</a>
+        <a href="#">Sitemap</a>
+        <a href="#">Cookies policy</a>
+      </div>
+      <span>All rights reserved © 2018</span>
+    </footer>
+    
    </body>
 </html>
